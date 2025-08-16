@@ -7,7 +7,7 @@ sequenceDiagram
   user ->> browser: click on "Save" button
   
   browser ->> server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
-  Note right of browser: Browser submit payload note=Hi <br> from HTML form<br>with method POST
+  Note right of browser: Browser submit payload note=Hi <br/> from HTML form<br/>with method POST
   server -->> browser: 302 Found - URL Redirect
   Note left of server: Server request to Browser <br/>to perform a GET
   
@@ -19,8 +19,8 @@ sequenceDiagram
   
   browser ->> server: GET https://studies.cs.helsinki.fi/exampleapp/main.js
   server -->> browser: 200 OK - The JavaScript file
-  Note right of browser: The browser executes JS code <br>that requets JSON data from Server
+  Note right of browser: The browser executes JS code <br/>that requets JSON data from Server
   browser ->> server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
   server -->> browser: [{ "content": "Hi", "date": "2025-08-13T06:38:59.209Z"},...]
-  Note right of browser: 200 OK - Ready State 4 <br>The browser executes <br>the function that renders the notes
+  Note right of browser: 200 OK - Ready State 4 <br/>The browser executes <br/>the function that renders the notes
   browser ->> user: User can see the full list of notes

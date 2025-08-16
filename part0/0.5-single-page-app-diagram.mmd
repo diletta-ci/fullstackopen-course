@@ -11,8 +11,8 @@ sequenceDiagram
   
   browser ->> server: GET https://studies.cs.helsinki.fi/exampleapp/spa.js
   server -->> browser: 200 OK - The JavaScript file
-  Note right of browser: The browser executes JS code <br>that requets JSON data from Server
+  Note right of browser: The browser executes JS code <br/>that requets JSON data from Server
   
   browser ->> server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
   server -->> browser: [{ "content": "Hi", "date": "2025-08-13T06:38:59.209Z"},...]
-  Note right of browser: 200 OK - Ready State 4 <br>The browser executes <br>redrawNotes() to render the notes
+  Note right of browser: 200 OK - Ready State 4 <br/>The browser executes <br/>redrawNotes() to render the notes

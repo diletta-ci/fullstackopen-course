@@ -3,12 +3,12 @@ sequenceDiagram
   participant browser as browser
   participant server as server
   
-  Note over user: Write a new note <br>"this is a new note"
+  Note over user: Write a new note <br/>"this is a new note"
   user ->> browser: click on "Save" button
-  Note over browser: JS event handler on form's submit event<br><br>Content-type=application/JSON<br>Payload={"content":"this is a new note","date":"2025-08-16T08:50:19.690Z"}
+  Note over browser: JS event handler on form's submit event<br/><br/>Content-type=application/JSON<br/>Payload={"content":"this is a new note","date":"2025-08-16T08:50:19.690Z"}
 
   browser ->> server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
   server -->> browser: 201 Created - New note created
 
-  Note over browser: JS redrawNotes() <br>to renders the notes
-  browser -->> user: User can see the full list of notes<br>without page reload
+  Note over browser: JS redrawNotes() <br/>to renders the notes
+  browser -->> user: User can see the full list of notes<br/>without page reload
