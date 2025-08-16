@@ -24,8 +24,8 @@ THe development process is manage and automate with a **Continous Integration an
 > *This course is still in progress, not all exercises are completed.*
 >
 > *Last update: 2025.08.13* 
-### [Part 0 - Fundamentals of Web apps](./part0) | **🏗️ IN PROGRESS**
-### [Part 1 - Introduction to React](./part1) | 📋 TO DO
+### [Part 0 - Fundamentals of Web apps](./part0) | **👀 CODE REVIEW**
+### [Part 1 - Introduction to React](./part1) | **🏗️ IN PROGRESS**
 ### [Part 2 - Communicating with server](./part2) | 📋 TO DO
 ### [Part 3 - Programming a server with NodeJS and Express](./part3) | 📋 TO DO
 ### [Part 4 - Testing Express servers, user administration](./part4) | 📋 TO DO
