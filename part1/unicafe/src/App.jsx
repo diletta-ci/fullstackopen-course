@@ -2,11 +2,19 @@ import { useState } from 'react'
 
 const StatisticLine = (props) => {
   return (
-    <p>{props.text} {props.value}</p>
+    <tr>
+      <td>{props.text}</td>
+      <td>{props.value}</td>
+    </tr>
   )
 }
 
 const Statistics = (props) => {
+  const average = (props.good - props.bad) / (props.good + props.neutral + props.bad)
+  const averageRounded = Math.round(average * 100) / 100
+  const positive = (props.good / (props.good + props.neutral + props.bad)) * 100
+  const positiveRounded = Math.round(positive * 100) / 100
+
   if (props.good === 0 && props.neutral === 0 && props.bad === 0) {
     return (
       <>
@@ -18,9 +26,21 @@ const Statistics = (props) => {
   return (
     <>
       <h1>statistics</h1>
-      <StatisticLine text="good" value={props.good} />
-      <StatisticLine text="neutral" value={props.neutral} />
-      <StatisticLine text="bad" value={props.bad} />
+      <table>
+        <tbody>
+          <StatisticLine text="good" value={props.good} />
+          <StatisticLine text="neutral" value={props.neutral} />
+          <StatisticLine text="bad" value={props.bad} />
+          <tr>
+            <td>average</td>
+            <td>{averageRounded}</td>
+          </tr>
+          <tr>
+            <td>positive</td>
+            <td>{positiveRounded}</td>
+          </tr>            
+        </tbody>
+      </table>
     </>
   )
 }
