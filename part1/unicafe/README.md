@@ -1,5 +1,5 @@
 # Unicafe
-Exercises from 1.6 to 1.14 are related to part 1 of the course.
+Exercises from 1.6 to 1.11 are related to part 1 of the course.
 
 
 ## Run locally
